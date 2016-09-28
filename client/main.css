@@ -1,0 +1,53 @@
+/* CSS declarations go here */
+
+.dashboard > * {
+    float: left
+}
+
+.dashboard::after{
+    display: block
+    ; content: ''
+    ; clear: both
+}
+
+.dashboard aside{
+    width: 30%;
+}
+
+.dashboard main{
+    width: 70%;
+    text-align: left
+    ; border-left: 1px solid rgba(0, 0, 0, .055)
+    ; padding-bottom: 30%
+    ; padding-top: 3rem
+    ; padding-left: 3rem
+}
+
+.dashboard li{
+    cursor: pointer
+}
+
+.dashboard-component .slide{
+    transform: none;
+}
+
+.dashboard {
+    padding: 0
+    ; border: none
+    
+}
+
+.dashboard li {
+    text-align: center
+    ; text-transform: lowercase
+    ; padding: 1rem
+    ; font-size: 1.5rem;
+    ; color: rgb(48,48,48)
+    ; border-bottom: 1px solid rgba(0, 0, 0, .055)
+}
+
+.dashboard li.selected, .dashboard li:hover{
+    background: hsl(340, 82%, 52%)
+    ;color: white
+}
+
